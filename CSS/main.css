@@ -295,13 +295,13 @@ p {
   fill: var(--primary-colour);
 }
 
-.sideBar__menuToggle:active {
+/* .sideBar__menuToggle:active {
   background-color: var(--primary-colour);
-}
+} */
 
-.sideBar__menuToggle:active svg rect {
+/* .sideBar__menuToggle:active svg rect {
   fill: var(--secondary-colour);
-}
+} */
 
 .sideBar__menuToggle:hover svg {
   transform: rotate(-45deg);
@@ -316,7 +316,7 @@ p {
 
 .switchBackground {
   background: var(--primary-colour);
-  transition: all 800ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
 .changeFilltoSecondary {
