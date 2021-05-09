@@ -114,8 +114,8 @@ colourInverter2.addEventListener("click", function colourSwitcher2() {
   // localStorage.removeItem("primarySaved");
   // localStorage.removeItem("secondarySaved");
 
-  localStorage.setItem("primarySaved", colourOne);
-  localStorage.setItem("secondarySaved", colourTwo);
+  localStorage.setItem("primarySaved", colourTwo);
+  localStorage.setItem("secondarySaved", colourOne);
 
   return [colourOne, colourTwo];
 
