@@ -83,6 +83,10 @@ colourInverter.addEventListener("click", function () {
     document.documentElement.style.setProperty('--primary-colour', '#F9F9F9');
     document.documentElement.style.setProperty('--secondary-colour', '#303030');
   }
+
+  localStorage.setItem("primarySaved", colourTwo);
+  localStorage.setItem("secondarySaved", colourOne);
+
   // alert('clicked');
 })
 
