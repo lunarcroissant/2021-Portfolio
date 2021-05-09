@@ -27,6 +27,13 @@ colourSwapSpace.addEventListener("click", function () {
   document.documentElement.style.setProperty('--primary-colour', primaryColour[a]);
   document.documentElement.style.setProperty('--secondary-colour', secondaryColour[a]);
 
+
+  localStorage.removeItem("primarySaved");
+  localStorage.removeItem("secondarySaved");
+
+  localStorage.setItem("primarySaved", primaryColour[a]);
+  localStorage.setItem("secondarySaved", secondaryColour[a]);
+
 })
 
 // document.documentElement.style.setProperty('--primary-colour', primaryColour[i]);
@@ -71,6 +78,11 @@ colourInverter.addEventListener("click", function () {
 
   document.documentElement.style.setProperty('--primary-colour', colourTwo);
   document.documentElement.style.setProperty('--secondary-colour', colourOne);
+
+  if (colourOne == '') {
+    document.documentElement.style.setProperty('--primary-colour', '#F9F9F9');
+    document.documentElement.style.setProperty('--secondary-colour', '#303030');
+  }
   // alert('clicked');
 })
 
@@ -79,7 +91,7 @@ colourInverter.addEventListener("click", function () {
 
 var colourInverter2 = document.querySelectorAll('.header__invertColour')[1];
 
-colourInverter2.addEventListener("click", function () {
+colourInverter2.addEventListener("click", function colourSwitcher2() {
   var colourOne = document.documentElement.style.getPropertyValue('--primary-colour');
   var colourTwo = document.documentElement.style.getPropertyValue('--secondary-colour');
 
@@ -89,6 +101,34 @@ colourInverter2.addEventListener("click", function () {
   document.documentElement.style.setProperty('--primary-colour', colourTwo);
   document.documentElement.style.setProperty('--secondary-colour', colourOne);
 
-  console.log(colourOne);
+  if (colourOne == '') {
+    document.documentElement.style.setProperty('--primary-colour', '#F9F9F9');
+    // document.documentElement.style.setProperty('--secondary-colour', '#303030');
+  }
+
+  if (colourTwo == '') {
+    // document.documentElement.style.setProperty('--primary-colour', '#F9F9F9');
+    document.documentElement.style.setProperty('--secondary-colour', '#303030');
+  }
+
+  // localStorage.removeItem("primarySaved");
+  // localStorage.removeItem("secondarySaved");
+
+  localStorage.setItem("primarySaved", colourOne);
+  localStorage.setItem("secondarySaved", colourTwo);
+
+  return [colourOne, colourTwo];
+
+  return (document.documentElement.style.getPropertyValue('--secondary-colour'));
 })
+
+// colourInverter2.addEventListener("click", function() {
+//   if 
+// })
+
+
+
+// document.documentElement.style.setProperty('--primary-colour', colourSwitcher2[0]);
+// document.documentElement.style.setProperty('--secondary-colour', colourSwitcher2[1]);
+
 
