@@ -27,7 +27,6 @@ colourSwapSpace.addEventListener("click", function () {
   document.documentElement.style.setProperty('--primary-colour', primaryColour[a]);
   document.documentElement.style.setProperty('--secondary-colour', secondaryColour[a]);
 
-  return k;
 })
 
 // document.documentElement.style.setProperty('--primary-colour', primaryColour[i]);
@@ -89,5 +88,7 @@ colourInverter2.addEventListener("click", function () {
 
   document.documentElement.style.setProperty('--primary-colour', colourTwo);
   document.documentElement.style.setProperty('--secondary-colour', colourOne);
+
+  console.log(colourOne);
 })
 

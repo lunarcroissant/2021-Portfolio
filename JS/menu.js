@@ -11,7 +11,7 @@ menuChecker.addEventListener('click', function () {
   if (this.checked) {
     menu.classList.add('menu--in');
     menuToggle.classList.add('switchBackground');
-    menuToggleIcon.classList.add('changeFilltoSecondary');
+    // menuToggleIcon.classList.add('changeFilltoSecondary');
     menuToggleIcon.classList.add('changeFilltoSecondary');
     menuToggleIcon2.classList.add('changeFilltoSecondary');
     // menuToggle.classList.add('noMoveOnHover');

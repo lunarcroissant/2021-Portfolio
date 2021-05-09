@@ -25,14 +25,6 @@
   list-style: none;
 }
 
-
-.about__text p {
-  /* width: 400px; */
-  /* overflow-wrap: break-word;
-  max-width: 500px; */
-
-}
-
 .about__image {
   display: flex;
   flex: 1;

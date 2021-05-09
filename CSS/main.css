@@ -248,6 +248,7 @@ p {
   align-items: center;
   cursor: pointer;
   position: relative;
+  /* z-index: 11; */
 }
 
 /* input[type=checkbox]{
@@ -265,6 +266,7 @@ p {
   height: calc(2 * calc(100vh - var(--side-bar-width))/3);
   width: 100%;
   visibility: hidden;
+  /* cursor: pointer; */
 
 }
 
@@ -279,6 +281,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   /* visibility: hidden; */
 }
 
@@ -304,8 +307,20 @@ p {
 } */
 
 .sideBar__menuToggle:hover svg {
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
+  fill: var(--secondary-colour);
   transition: all ease-in-out 500ms;
+}
+
+.sideBar__menuToggle:hover {
+  /* transform: rotate(-45deg); */
+  background: var(--primary-colour);
+  transition: all ease-in-out 500ms;
+
+}
+
+.sideBar__menuToggle:hover .sideBar__menuToggleComponent {
+  fill: var(--secondary-colour);
 }
 
 .makeX {
@@ -316,7 +331,7 @@ p {
 
 .switchBackground {
   background: var(--primary-colour);
-  transition: all 1000ms ease-in-out;
+  /* transition: all 1000ms ease-in-out; */
 }
 
 .changeFilltoSecondary {
