@@ -316,7 +316,10 @@ p {
   /* transform: rotate(-45deg); */
   background: var(--primary-colour);
   transition: all ease-in-out 500ms;
+}
 
+.sideBar__menuToggle:not(:hover) {
+  transition: all ease-in-out 500ms;
 }
 
 .sideBar__menuToggle:hover .sideBar__menuToggleComponent {
