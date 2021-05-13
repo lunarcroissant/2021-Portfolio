@@ -1,30 +1,17 @@
 .contact___contactOptionBox--light {
   all: unset;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1em;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   /* justify-content: center;
   align-items: center; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
+  align-items: center;
+  flex: 1;
+  flex-grow: 1;
   height: 5em;
   font-family: Basier;
   font-size: 4.8rem;
-  -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
   border: 2px var(--primary-colour) solid !important;
   color: var(--primary-colour) !important;
@@ -36,16 +23,9 @@
   background-color: var(--primary-colour);
   /* color: var(--primary-colour); */
   -webkit-text-fill-color: var(--secondary-colour);
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: all ease-in-out 500ms;
+  flex: 3;
+  align-items: flex-start;
+  justify-content: space-between;
   transition: all ease-in-out 500ms;
 }
 
@@ -59,19 +39,16 @@
   display: flex;
   color: var(--secondary-colour) !important;
 } */
+
 .contact___contactOptionBox--light:hover .on-hover--light {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: var(--secondary-colour) !important;
   opacity: 1;
-  -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
 }
 
 .contact___contactOptionBox--light:hover .contact__method {
   font-size: 2.4rem;
-  -webkit-transition: ease-in-out 500ms;
   transition: ease-in-out 500ms;
 }
 
@@ -83,4 +60,3 @@
   margin-left: auto;
   fill: var(--secondary-colour);
 }
-/*# sourceMappingURL=contact.css.map */

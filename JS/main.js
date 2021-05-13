@@ -136,3 +136,19 @@ colourInverter2.addEventListener("click", function colourSwitcher2() {
 // document.documentElement.style.setProperty('--secondary-colour', colourSwitcher2[1]);
 
 
+var backToTopBtn = document.querySelector('.footer__backToTopBtn');
+
+// backToTopBtn.addEventListener("click", function () {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+
+//   console.log('clicked');
+// })
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+  console.log('why is it not doing anything???')
+}
+
