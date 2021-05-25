@@ -25,7 +25,7 @@
 html {
   --primary-colour: #303030;
   --secondary-colour: #F9F9F9;
-  --side-bar-width: calc(30px + 5vw);
+  --side-bar-width: calc(40px + 5vw);
   --maximum-menu-size: 150px;
   scroll-behavior: smooth;
 }
@@ -45,13 +45,13 @@ body {
 }
 
 h1 {
-  font-family: Basier;
+  font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 7.2rem; */
   font-size: calc(2.8rem + 3vw);
 }
 
 h2 {
-  font-family: Basier;
+  font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 4.8rem; */
   font-size: calc(1.6rem + 2.3vw);
 }
@@ -63,14 +63,14 @@ h3 {
 }
 
 h4 {
-  font-family: Basier;
+  font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 3.6rem; */
   font-size: calc(1.8rem + 1.2vw);
   font-weight: 100;
 }
 
 h5 {
-  font-family: Basier;
+  font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 1.8rem; */
   font-size: calc(1rem + 0.5vw);
   font-weight: 100;
@@ -78,13 +78,13 @@ h5 {
 
 h6 {
   all: unset;
-  font-family: Basier;
+  font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 1.4rem; */
   font-size: calc(0.5rem + 0.6vw);
 }
 
 p {
-  font-family: Basier;
+  font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 2.4rem; */
   font-size: calc(1rem + 0.8vw);
 }
@@ -413,8 +413,9 @@ p {
   cursor: pointer;
   // width: 3.5em;
   // height: 3.5em;
-  width: calc(19px + 1vw);
-  height: calc(19px + 1vw);
+  width: calc(25px + 1vw);
+  height: calc(25px + 1vw);
+  margin-right: 2vw;
 }
 
 .heroContent {
@@ -519,7 +520,7 @@ p {
 .twoColumn {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: flex-start;
   align-items: flex-start;
   /* align-items: center; */
@@ -564,8 +565,12 @@ p {
   font-weight: 200;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 .opacityHalf {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .secondary-colour {

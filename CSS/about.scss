@@ -28,7 +28,7 @@
 .about__image {
   display: flex;
   flex: 1;
-  width: 50%;
+  // width: 50%;
   min-width: 400px;
   justify-content: flex-end;
   align-items: center;
@@ -47,4 +47,35 @@
 .about__image img:hover {
   filter: grayscale(10%);
   transition: ease-in-out all 1500ms;
+}
+
+@media screen and (max-width: 768px) {
+
+  .about__image {
+    display: flex;
+    flex: 1;
+    // width: 50%;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+
+  .about__textItem {
+    width: 100%;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    list-style: none;
+    padding-bottom: 40px;
+  }
+
+  .paddingTop10vh {
+    padding-top: 10px;
+  }
+
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
