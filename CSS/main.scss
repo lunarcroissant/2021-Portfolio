@@ -59,6 +59,7 @@ h2 {
 h3 {
   font-family: BasierBold;
   font-size: 14.4rem;
+  // font-size: calc(3.5rem + 6vmin);
 }
 
 h4 {
@@ -738,9 +739,7 @@ p {
 
   &__subInfoList {
 
-    padding: 1vh 0;
-
-
+    padding: 0;
 
     list-style: none;
     // line-height: 2em;
@@ -825,6 +824,34 @@ p {
   flex-direction: column;
   justify-content: center;
   align-self: center;
+
+  &__authorDetails {
+    display: flex;
+
+  }
+
+  &__authorTrack {
+    overflow: hidden;
+    position: relative;
+    min-height: 50px;
+  }
+
+  &__authorsList {
+    // position: relative;
+    height: 100%;
+  }
+
+  &__testimonialIndividial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .testimonials__switcher {
@@ -893,6 +920,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .testimonials__authorImage {
@@ -915,6 +949,7 @@ p {
   align-items: center;
   color: var(--secondary-colour);
   padding: 0 10vw;
+  width: 100%;
 }
 
 .testimonials__text {
@@ -922,12 +957,15 @@ p {
   padding-top: 5vh;
   text-align: center;
   max-width: 50ch;
+  // width: 100%;
 }
 
 .testimonials__testimonialsTrack {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  min-height: 200px;
 }
 
 .testimonials__progressIndicators {
@@ -960,6 +998,14 @@ p {
   font-size: 1.8rem;
   color: var(--primary-colour);
 } */
+
+@media screen and (max-width: 999px) {
+
+  h3 {
+    font-size: calc(3.5rem + 6vmin);
+  }
+  
+}
 
 @media screen and (max-width: 768px) {
 
