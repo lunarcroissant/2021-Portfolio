@@ -520,6 +520,8 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   /* align-items: center; */
   
 }
@@ -556,6 +558,10 @@ p {
 
 .italic {
   font-style: italic;
+}
+
+.lightText {
+  font-weight: 200;
 }
 
 .opacityHalf {

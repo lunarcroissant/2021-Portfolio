@@ -634,6 +634,12 @@ p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   /* align-items: center; */
 }
 
@@ -673,6 +679,10 @@ p {
 
 .italic {
   font-style: italic;
+}
+
+.lightText {
+  font-weight: 200;
 }
 
 .opacityHalf {
