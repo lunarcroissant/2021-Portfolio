@@ -857,6 +857,10 @@ p {
   list-style: none;
 }
 
+.caseStudy__linkSVG {
+  width: calc(2rem + 3vmin);
+}
+
 .caseStudyThumbnail {
   height: 70vh;
   min-height: 250px;
