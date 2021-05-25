@@ -72,3 +72,27 @@ menuChecker.addEventListener('click', function () {
 //   menu.style.left = '-3000px';
 
 // })
+
+var mobileMenuToggle = document.querySelector('.mainColumn__menuToggle');
+var mobileMenuToggleSVG = document.querySelector('.mainColumn__menuToggleSVG');
+var mobileMenuToggleIcon = document.querySelector('.mainColumn__menuToggleComponent');
+var mobileMenuToggleIcon2 = document.querySelectorAll('.mainColumn__menuToggleComponent')[1];
+var mobileMenuChecker = document.querySelector('#mainColumn__menuCheckbox');
+
+mobileMenuChecker.addEventListener('click', function () {
+  if (this.checked) {
+    menu.classList.add('menu--in');
+    // alert('checked');
+    mobileMenuToggleSVG.classList.add('makeX');
+    mobileMenuChecker.style.background = 'var(--primary-colour)';
+
+
+  }
+  else {
+    menu.classList.remove('menu--in');
+    mobileMenuToggleSVG.classList.remove('makeX');
+    mobileMenuToggleSVG.style.transition = 'all ease-in-out 600ms';
+    menu.style.transition = 'all ease-in-out 1000ms';
+
+  }
+})

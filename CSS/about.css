@@ -40,7 +40,9 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
   min-width: 400px;
+  height: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -52,13 +54,27 @@
 
 .about__image img {
   min-width: 300px;
+  height: 100%;
+  width: 80%;
   /* height: 60vh; */
-  width: 30vw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1vw;
   -webkit-filter: grayscale(99%);
           filter: grayscale(99%);
+  background-image: radial-gradient(0% transparent, 100% #303030);
+  position: relative;
+}
+
+.about__image img::before {
+  content: 'k';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: radial-gradient(transparent 0%, #303030 100%);
+  z-index: 100;
 }
 
 .about__image img:hover {
