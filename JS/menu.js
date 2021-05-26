@@ -81,7 +81,7 @@ var mobileMenuChecker = document.querySelector('#mainColumn__menuCheckbox');
 
 mobileMenuChecker.addEventListener('click', function () {
   if (this.checked) {
-    menu.classList.add('menu--in');
+    menu.classList.add('mobileMenu--in');
     // alert('checked');
     mobileMenuToggleSVG.classList.add('makeX');
     mobileMenuChecker.style.background = 'var(--primary-colour)';
@@ -89,7 +89,7 @@ mobileMenuChecker.addEventListener('click', function () {
 
   }
   else {
-    menu.classList.remove('menu--in');
+    menu.classList.remove('mobileMenu--in');
     mobileMenuToggleSVG.classList.remove('makeX');
     mobileMenuToggleSVG.style.transition = 'all ease-in-out 600ms';
     menu.style.transition = 'all ease-in-out 1000ms';

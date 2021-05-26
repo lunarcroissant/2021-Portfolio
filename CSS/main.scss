@@ -130,6 +130,18 @@ p {
   transition: all 800ms ease-in-out;
 }
 
+.mobileMenu--in {
+  position: absolute;
+  top: var(--side-bar-width) !important;
+  height: calc(100vh - var(--side-bar-width));
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  transition: all 800ms ease-in-out;
+}
+
 .menu--out {
   left: -3000px;
 }
@@ -1171,7 +1183,7 @@ p {
 
     &__linksContainer {
       left: var(--side-bar-width);
-      height: 100vh;
+      height: calc(100vh-var(--side-bar-width));
       width: 100vw;
       border-right: none;
     }
@@ -1238,6 +1250,10 @@ p {
   
   .caseStudy__ThumbnailImage {
     object-fit: contain;
+  }
+
+  .caseStudy__infoRow:after {
+    border-radius: 0 0 8px 8px;
   }
   
   
