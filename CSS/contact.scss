@@ -26,6 +26,7 @@
 
 .contact___contactOptionBox--light:hover {
   background-color: var(--primary-colour);
+  color: var(--primary-colour) !important;
   /* color: var(--primary-colour); */
   -webkit-text-fill-color: var(--secondary-colour);
   flex: 3;
@@ -36,7 +37,7 @@
 
 .on-hover--light {
   display: none;
-  opacity: 0;
+  opacity: 1;
   color: var(--primary-colour);
 }
 
