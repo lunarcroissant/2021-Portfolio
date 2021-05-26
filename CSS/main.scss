@@ -617,7 +617,7 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   height: auto;
-  gap: 2em;
+  // gap: 2em;
   color: var(--secondary-colour);
 
   &__description {
@@ -633,10 +633,18 @@ p {
   &__contactOptions {
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw;
+    // gap: 2vw;
     height: auto;
     width: 100%;
     justify-content: space-around;
+  }
+
+  &__contactOptionBox:last-of-type, &__contactOptionBox:nth-of-type(2) {
+    margin: 0 0 0 20px;
+  }
+
+  &__contactOptionBox--light:last-of-type, &__contactOptionBox--light:nth-of-type(2) {
+    margin: 0 0 0 20px;
   }
 
   &__contactOptionBox {
@@ -658,6 +666,7 @@ p {
     border: 2px var(--secondary-colour) solid;
     cursor: pointer;
     transition: all ease-in-out 500ms;
+    // margin-left: 20px;
   }
 
 
@@ -1034,6 +1043,20 @@ p {
 
   h3 {
     font-size: calc(3.5rem + 6vmin);
+  }
+
+  .contact {
+    &__contactOptions {
+      flex-direction: column;
+    }
+  
+    &__contactOptionBox:last-of-type, &__contactOptionBox:nth-of-type(2) {
+      margin: 20px 0 0 0;
+    }
+  
+    &___contactOptionBox--light:last-of-type, &___contactOptionBox--light:nth-of-type(2) {
+      margin: 20px 0 0 0 !important;
+    }
   }
 
   // .caseStudyThumbnail {

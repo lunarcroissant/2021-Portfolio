@@ -32,6 +32,10 @@
   min-width: 200px;
 }
 
+.contact___contactOptionBox--light:last-of-type, .contact___contactOptionBox--light:nth-of-type(2) {
+  margin-left: 20px;
+}
+
 .contact___contactOptionBox--light:hover {
   background-color: var(--primary-colour);
   /* color: var(--primary-colour); */

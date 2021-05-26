@@ -751,7 +751,6 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  gap: 2em;
   color: var(--secondary-colour);
 }
 
@@ -771,11 +770,18 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2vw;
   height: auto;
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.contact__contactOptionBox:last-of-type, .contact__contactOptionBox:nth-of-type(2) {
+  margin: 0 0 0 20px;
+}
+
+.contact__contactOptionBox--light:last-of-type, .contact__contactOptionBox--light:nth-of-type(2) {
+  margin: 0 0 0 20px;
 }
 
 .contact__contactOptionBox {
@@ -1196,6 +1202,18 @@ p {
 @media screen and (max-width: 999px) {
   h3 {
     font-size: calc(3.5rem + 6vmin);
+  }
+  .contact__contactOptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__contactOptionBox:last-of-type, .contact__contactOptionBox:nth-of-type(2) {
+    margin: 20px 0 0 0;
+  }
+  .contact___contactOptionBox--light:last-of-type, .contact___contactOptionBox--light:nth-of-type(2) {
+    margin: 20px 0 0 0 !important;
   }
 }
 
