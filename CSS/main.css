@@ -1387,6 +1387,9 @@ p {
   .contact__contactOptionBox {
     max-height: 150px;
   }
+  .contact___contactOptionBox--light {
+    height: 1em;
+  }
   .caseStudyThumbnail {
     height: 40vh;
     border-radius: 10px 10px 0 0;
