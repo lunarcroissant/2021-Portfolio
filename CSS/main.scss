@@ -425,6 +425,7 @@ p {
   flex-shrink: 0;
   overflow: auto;
   height: 100vh;
+  animation: slideIn 1500ms ease-in-out forwards;
   /* animation: slideUpSlow 800ms ease-in-out forwards; */
   /* padding: 2vw; */
 }
@@ -551,6 +552,20 @@ p {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@keyframes slideIn {
+
+  0% {
+    transform: translateX(-100vmax);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
 }
 
 .twoColumn {
@@ -1145,6 +1160,7 @@ p {
 
   .mainColumn {
     width: 100vw;
+    animation: none;
     // padding: 1rem;
 
     &__logo {
