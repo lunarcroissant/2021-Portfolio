@@ -20,6 +20,18 @@
   src: url(/fonts/basiercircle-bold-webfont.woff);
 }
 
+// Strawford
+
+@font-face {
+  font-family: StawfordRegular;
+  src: url(/fonts/strawford-regular-webfont.woff2);
+}
+
+@font-face {
+  font-family: StawfordItalic;
+  src: url(/fonts/strawford-regularitalic-webfont.woff2);
+}
+
 /* HTML */
 
 html {
