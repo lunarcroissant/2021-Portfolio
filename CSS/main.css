@@ -49,6 +49,10 @@ html {
   font-size: 10px;
 }
 
+::-webkit-scrollbar-track-piece {
+  background: none;
+}
+
 body {
   background: var(--secondary-colour);
 }
@@ -825,10 +829,6 @@ p {
       flex-wrap: wrap;
   height: auto;
   color: var(--secondary-colour);
-}
-
-.contact__method--light {
-  color: var(--secondary-colour) !important;
 }
 
 .contact__description {

@@ -52,6 +52,10 @@ html {
   font-size: 10px;
 }
 
+::-webkit-scrollbar-track-piece {
+  background: none;
+}
+
 body {
   background: var(--secondary-colour);
 }
@@ -673,9 +677,9 @@ p {
   // gap: 2em;
   color: var(--secondary-colour);
 
-  &__method--light {
-    color: var(--secondary-colour) !important;
-  } 
+  // &__method--light {
+  //   color: var(--primary-colour) !important;
+  // } 
 
   &__description {
     color: var(--secondary-colour);

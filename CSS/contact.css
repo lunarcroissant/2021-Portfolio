@@ -1,4 +1,18 @@
-.contact___contactOptionBox--light {
+.contact--light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+  color: var(--primary-colour);
+}
+
+.contact__contactOptionBox--light {
   all: unset;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,11 +46,11 @@
   min-width: 200px;
 }
 
-.contact___contactOptionBox--light:last-of-type, .contact___contactOptionBox--light:nth-of-type(2) {
+.contact__contactOptionBox--light:last-of-type, .contact__contactOptionBox--light:nth-of-type(2) {
   margin-left: 20px;
 }
 
-.contact___contactOptionBox--light:hover {
+.contact__contactOptionBox--light:hover {
   background-color: var(--primary-colour);
   color: var(--primary-colour) !important;
   /* color: var(--primary-colour); */
@@ -64,7 +78,7 @@
   display: flex;
   color: var(--secondary-colour) !important;
 } */
-.contact___contactOptionBox--light:hover .on-hover--light {
+.contact__contactOptionBox--light:hover .on-hover--light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +88,7 @@
   transition: all ease-in-out 500ms;
 }
 
-.contact___contactOptionBox--light:hover .contact__method {
+.contact__contactOptionBox--light:hover .contact__method {
   font-size: 2.4rem;
   -webkit-transition: ease-in-out 500ms;
   transition: ease-in-out 500ms;
@@ -84,7 +98,7 @@
   margin-right: auto;
 }
 
-.contact___contactOptionBox--light svg {
+.contact__contactOptionBox--light svg {
   margin-left: auto;
   fill: var(--secondary-colour);
 }
