@@ -136,7 +136,8 @@ colourInverter2.addEventListener("click", function colourSwitcher2() {
 // document.documentElement.style.setProperty('--secondary-colour', colourSwitcher2[1]);
 
 
-var backToTopBtn = document.querySelector('.footer__backToTopBtn');
+// const backToTopBtn = document.querySelector('.footer__backToTopBtn');
+// const fullWithContainer = document.querySelector('#fullWidthContainer');
 
 // backToTopBtn.addEventListener("click", function () {
 //   document.body.scrollTop = 0;
@@ -145,10 +146,19 @@ var backToTopBtn = document.querySelector('.footer__backToTopBtn');
 //   console.log('clicked');
 // })
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+// backToTopBtn.addEventListener('click', function () {
+//   // window.screen.top = '0px';
+//   // window.screenY = '0px';
+//   // window.screenTop = '0px';
+//   console.log(window.scrollY);
 
-  console.log('why is it not doing anything???')
-}
+//   console.log('return to top');
+// })
+
+// function scrollToTop() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+
+//   console.log('why is it not doing anything???')
+// }
 
