@@ -1,6 +1,6 @@
-var primaryColour = ["#303030", "#60D9FF", "#FF7171", "#FFE660", "#1F09A8", "#FFD37C", "#FF949A", "#F64B4B", "#4B7BF6", "#3B41D3"];
+var primaryColour = ["#303030", "#60D9FF", "#FF7171", "#FFE660", "#1F09A8", "#FFD37C", "#FF949A", "#F64B4B", "#4B7BF6", "#3B41D3", "#007B85"];
 
-var secondaryColour = ["#F9F9F9", "#6A54F3", "#3B41D3", "#F35E54", "#8AFFDC", "#1F2531", "#3835DC", "#303030", "#E3CDFF", "#F9F9F9"];
+var secondaryColour = ["#F9F9F9", "#6A54F3", "#3B41D3", "#F35E54", "#8AFFDC", "#1F2531", "#3835DC", "#303030", "#E3CDFF", "#F9F9F9", "#CFFFF6"];
 
 var colourSwapSpace = document.querySelector('.heroContent');
 
@@ -20,7 +20,7 @@ var a = Math.round(Math.random() * 6);
 colourSwapSpace.addEventListener("click", function () {
   // var k = i + 2;
 
-  var a = Math.round(Math.random() * 9);
+  var a = Math.round(Math.random() * 10);
 
   // alert(a);
 
