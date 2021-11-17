@@ -10,11 +10,13 @@
 
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/about.css">
+  <script src="/JS/main.js"></script>
   <script>
     document.documentElement.style.setProperty('--primary-colour', localStorage.getItem("primarySaved"));
     document.documentElement.style.setProperty('--secondary-colour', localStorage.getItem("secondarySaved"));
   </script>
   <script defer src="/JS/menu.js"></script>
+  
 </head>
 
 <body>
@@ -164,32 +166,46 @@
               of every project. </p>
 
             <br>
-
-            <h2 class="about__textItem paddingTop10vh">What I help with</h2>
-            <ul class="about__textItem">
-              <li>
-                <p class="lightText">UI/UX design</p>
-              </li>
-              <li>
-                <p>Prototyping</p>
-              </li>
-              <li>
-                <p>React.js // JavaScript // GraphQL // TypeScript // Jest // CSS3 // HTML5 // Sass // jQuery // Git // Bitbucket</p>
-              </li>
-              <li>
-                <p>User Research</p>
-              </li>
-              <li>
-                <p>Design systems</p>
-              </li>
-            </ul>
           </div>
           <div class="about__image">
             <img src="/static/APicOfMe1044x1290.jpg" alt="">
           </div>
         </div>
+        <h2 class="about__textItem">What I help with</h2>
+        <p>Browse and filter my skills for what you’re looking for.</p>
       </div>
+      <div class="about__skills">
+      
+        
+        <div class="about__skillsFilterContainer">
+
+          <ul class="about__skillsFilter">
+            <li class="about__skillsTab active" onclick="displaySkills('All')" id="All"><button class="about__skillsTabButton"><p>All</p></button></li>
+            <li class="about__skillsTab inactive" onclick="displaySkills('Design')" id="Design"><button class="about__skillsTabButton"><p>Design</p>
+            </button></li>
+            <li class="about__skillsTab inactive" onclick="displaySkills('Code')" id="Code"><button class="about__skillsTabButton"><p>Code</p></button></li>
+          </ul>
+          <div class="horizontal-divider"></div>
+
+        </div>
+        
+        <div class="about__skillsList" id="skills-display">
+          
+        </div>
+      </div>
+      <footer class="footer">
+
+        <div class="secondaryColourDivider"></div>
+        <div class="footer__info">
+          <a href="index.html" class="footer__backToTopBtn">
+            <h6>Back to the start</h6>
+          </a>
+          <h6 class="footer__copyright">&copy; 2021 - All rights reserved</h6>
+        </div>
+
+      </footer>
     </section>
+    
 
   </div>
 

@@ -36,7 +36,7 @@
 
 html {
   --primary-colour: #303030;
-  --secondary-colour: #F9F9F9;
+  --secondary-colour: #f9f9f9;
   --side-bar-width: calc(40px + 5vw);
   --maximum-menu-size: 150px;
   scroll-behavior: smooth;
@@ -103,6 +103,12 @@ p {
   font-family: Basier, Arial, Helvetica, sans-serif;
   /* font-size: 2.4rem; */
   font-size: calc(1.6rem + 0.8vw);
+}
+
+.horizontal-divider {
+  height: 2px;
+  width: 100%;
+  background: var(--primary-colour);
 }
 
 /* Hero Section */
@@ -235,8 +241,6 @@ p {
   transition: all 800ms ease-in-out;
 }
 
-
-
 .sideBar {
   height: 100vh;
   width: var(--side-bar-width);
@@ -273,7 +277,7 @@ p {
 }
 
 .sideBar__menuToggle {
-  height: calc(2 * calc(100vh - var(--side-bar-width))/3);
+  height: calc(2 * calc(100vh - var(--side-bar-width)) / 3);
   border-bottom: 1px var(--primary-colour) solid;
   display: flex;
   justify-content: center;
@@ -295,11 +299,10 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(2 * calc(100vh - var(--side-bar-width))/3);
+  height: calc(2 * calc(100vh - var(--side-bar-width)) / 3);
   width: 100%;
   visibility: hidden;
   /* cursor: pointer; */
-
 }
 
 #sideBar__menuCheckboxLabel {
@@ -308,7 +311,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  height: calc(2 * calc(100vh - var(--side-bar-width))/3);
+  height: calc(2 * calc(100vh - var(--side-bar-width)) / 3);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -323,7 +326,6 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  
 }
 
 .sideBar__menuToggleComponent__dark {
@@ -486,7 +488,6 @@ p {
   margin-right: 2vw;
 }
 
-
 /* Buttons and Icons */
 
 .plusIcon {
@@ -497,7 +498,7 @@ p {
 }
 
 .plusIcon:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 14px;
   top: -14px;
@@ -559,7 +560,6 @@ p {
 }
 
 @keyframes slideIn {
-
   0% {
     transform: translateX(-100vmax);
     opacity: 0;
@@ -569,7 +569,6 @@ p {
     transform: translateX(0);
     opacity: 1;
   }
-  
 }
 
 .twoColumn {
@@ -581,7 +580,6 @@ p {
   align-items: flex-end;
   overflow: hidden;
   /* align-items: center; */
-  
 }
 
 /* .on-hover:hover {
@@ -679,7 +677,7 @@ p {
 
   // &__method--light {
   //   color: var(--primary-colour) !important;
-  // } 
+  // }
 
   &__description {
     color: var(--secondary-colour);
@@ -700,11 +698,13 @@ p {
     justify-content: space-around;
   }
 
-  &__contactOptionBox:last-of-type, &__contactOptionBox:nth-of-type(2) {
+  &__contactOptionBox:last-of-type,
+  &__contactOptionBox:nth-of-type(2) {
     margin: 0 0 0 20px;
   }
 
-  &__contactOptionBox--light:last-of-type, &__contactOptionBox--light:nth-of-type(2) {
+  &__contactOptionBox--light:last-of-type,
+  &__contactOptionBox--light:nth-of-type(2) {
     margin: 0 0 0 20px;
   }
 
@@ -729,14 +729,7 @@ p {
     transition: all ease-in-out 500ms;
     // margin-left: 20px;
   }
-
-
-
-
-
-
 }
-
 
 // .contact__description {
 //   color: var(--secondary-colour);
@@ -819,7 +812,6 @@ p {
   flex-direction: column;
   width: 100%;
 
-
   &__infoItem:last-of-type {
     min-width: 50px;
     display: flex;
@@ -828,7 +820,6 @@ p {
   }
 
   &__subInfoList {
-
     padding: 0;
 
     list-style: none;
@@ -838,8 +829,6 @@ p {
   &__linkSVG {
     width: calc(2rem + 3vmin);
   }
-  
-
 }
 
 .caseStudyThumbnail {
@@ -880,7 +869,6 @@ p {
   border-left: 1px var(--primary-colour) solid;
   border-right: 1px var(--primary-colour) solid;
   border-bottom: 1px var(--primary-colour) solid;
-
 }
 
 .caseStudy__infoItems {
@@ -889,7 +877,6 @@ p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
 }
 
 .caseStudy__infoItem {
@@ -921,7 +908,6 @@ p {
 
   &__authorDetails {
     display: flex;
-
   }
 
   &__authorTrack {
@@ -958,7 +944,6 @@ p {
   cursor: pointer;
   position: relative;
   /* padding: 2em; */
-
 }
 
 .testimonials__arrowSVG {
@@ -968,8 +953,6 @@ p {
 /* .testimonials__arrow:hover {
   fill: var(--primary-colour);
 } */
-
-
 
 .testimonials__arrow {
   all: unset;
@@ -995,7 +978,6 @@ p {
 .testimonials__arrow:hover .testimonials__arrowSVG {
   fill: var(--primary-colour);
 }
-
 
 /* .testimonials__switcher svg::after:hover {
   content: "";
@@ -1030,7 +1012,6 @@ p {
   object-fit: cover;
   margin-right: 2em;
   border-radius: 3em;
-
 }
 
 .testimonials__testimonialsList {
@@ -1101,7 +1082,6 @@ p {
 }
 
 @media screen and (max-width: 999px) {
-
   h3 {
     font-size: calc(3.5rem + 6vmin);
   }
@@ -1110,12 +1090,14 @@ p {
     &__contactOptions {
       flex-direction: column;
     }
-  
-    &__contactOptionBox:last-of-type, &__contactOptionBox:nth-of-type(2) {
+
+    &__contactOptionBox:last-of-type,
+    &__contactOptionBox:nth-of-type(2) {
       margin: 20px 0 0 0;
     }
-  
-    &___contactOptionBox--light:last-of-type, &___contactOptionBox--light:nth-of-type(2) {
+
+    &___contactOptionBox--light:last-of-type,
+    &___contactOptionBox--light:nth-of-type(2) {
       margin: 20px 0 0 0 !important;
     }
   }
@@ -1127,7 +1109,7 @@ p {
   //   border-radius: 0.5vw 0.5vw 0 0;
   //   background-color: var(--primary-colour);
   // }
-  
+
   // .caseStudy__ThumbnailImage {
   //   object-fit: contain;
   //   object-position: center center no-repeat;
@@ -1136,24 +1118,21 @@ p {
   //   width: inherit;
   //   border-radius: 0.5vw 0.5vw 0 0;
   // }
-  
 }
 
 @media screen and (max-width: 768px) {
-
   .mobileOff {
     display: none;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
-
   .sideBar {
     border-right: none;
     display: none;
 
-    &__menuToggle, &__contact {
+    &__menuToggle,
+    &__contact {
       display: none;
     }
 
@@ -1184,14 +1163,12 @@ p {
       // padding-right: 2vw;
       border-right: 1px var(--primary-colour) solid;
     }
-    
+
     &__logo a svg {
       width: calc(30px + 1vw);
       height: calc(30px + 1vw);
       overflow: visible;
     }
-
-    
   }
 
   .header {
@@ -1204,7 +1181,6 @@ p {
     // padding: 1rem;
 
     &__invertColourContainer {
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1212,15 +1188,13 @@ p {
       min-height: var(--side-bar-width);
       width: var(--side-bar-width);
       border-left: 1px var(--primary-colour) solid;
-
     }
-    
 
     &__invertColour {
       width: 30px;
       height: 30px;
       overflow: visible;
-      margin: 1rem;      
+      margin: 1rem;
     }
   }
 
@@ -1254,13 +1228,13 @@ p {
   .mainColumn__menuToggleComponent {
     fill: var(--primary-colour);
   }
-  
+
   /* input[type=checkbox]{
     height: 0;
     width: 0;
     visibility: hidden;
   } */
-  
+
   #mainColumn__menuCheckbox {
     position: absolute;
     top: 0;
@@ -1271,9 +1245,8 @@ p {
     width: 100%;
     visibility: hidden;
     /* cursor: pointer; */
-  
   }
-  
+
   #mainColumn__menuCheckboxLabel {
     position: absolute;
     top: 0;
@@ -1301,7 +1274,7 @@ p {
     height: 40vh;
     border-radius: 10px 10px 0 0;
   }
-  
+
   .caseStudy__ThumbnailImage {
     object-fit: contain;
   }
@@ -1309,7 +1282,4 @@ p {
   .caseStudy__infoRow:after {
     border-radius: 0 0 8px 8px;
   }
-  
-  
-  
 }
