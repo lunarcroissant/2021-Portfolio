@@ -74,7 +74,7 @@ h2 {
 
 h3 {
   font-family: BasierBold;
-  font-size: 14.4rem;
+  font-size: 3.6rem;
   // font-size: calc(3.5rem + 6vmin);
 }
 
@@ -101,8 +101,13 @@ h6 {
 
 p {
   font-family: Basier, Arial, Helvetica, sans-serif;
-  /* font-size: 2.4rem; */
-  font-size: calc(1.6rem + 0.8vw);
+  font-size: 2.4rem;
+  // font-size: calc(1.6rem + 0.8vw);
+}
+
+.menuLink {
+  font-size: 14.4rem;
+  font-family: BasierBold;
 }
 
 .horizontal-divider {
@@ -1082,7 +1087,8 @@ p {
 }
 
 @media screen and (max-width: 999px) {
-  h3 {
+  h3,
+  .menuLink {
     font-size: calc(3.5rem + 6vmin);
   }
 

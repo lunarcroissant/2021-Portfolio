@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/about.css">
-  <script src="/JS/main.js"></script>
+  <script defer src="/JS/main.js"></script>
   <script>
     document.documentElement.style.setProperty('--primary-colour', localStorage.getItem("primarySaved"));
     document.documentElement.style.setProperty('--secondary-colour', localStorage.getItem("secondarySaved"));
@@ -40,19 +40,19 @@
         <a href="index.html" class="menu__link">
           <div class="menu__linkContainer">
             <h4>01.</h4>
-            <h3 class="menu__linkHeader">WORK</h3>
+            <h3 class="menu__linkHeader menu__linkHeader--active"><span class="menuLink">WORK</span></h3>
           </div>
         </a>
         <a href="about.html" class="menu__link">
           <div class="menu__linkContainer">
             <h4>02.</h4>
-            <h3 class="menu__linkHeader menu__linkHeader--active">PROFILE</h3>
+            <h2 class="menu__linkHeader"><span class="menuLink">PROFILE</span></h2>
           </div>
         </a>
         <a href="contact.html" class="menu__link">
           <div class="menu__linkContainer">
             <h4>03.</h4>
-            <h3 class="menu__linkHeader">CONTACT</h3>
+            <h2 class="menu__linkHeader"><span class="menuLink">CONTACT</span></h2>
           </div>
         </a>
 

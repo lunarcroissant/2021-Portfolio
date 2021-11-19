@@ -1,8 +1,13 @@
-var primaryColour = ["#303030", "#60D9FF", "#FF7171", "#FFE660", "#1F09A8", "#FFD37C", "#FF949A", "#F64B4B", "#4B7BF6", "#3B41D3", "#007B85", "#B4C4C6", "#30D399"];
+var primaryColour = ["#303030", "#60D9FF", "#FF7171", "#FFE660", "#1F09A8", "#FFD37C", "#FF949A", "#F64B4B", "#4B7BF6", "#3B41D3", "#007B85", "#B4C4C6", "#30D399", "#DCB322", "#343293", "#424242", "#FFE175", "#C44A23", "#FFD37C", "#F6F6F6", "#8CBCD0", "#FAFAFF", "#FFEC41", "#DCDCDC", "#FFE175", "#FAFAFF", "#36D689", "#F6F6F6", "#FAFAFF", "#3E6073", "#F6F6F6", "#546FFF", "#6C54FF", "#87655E", "#FF9878", "#D9F1FF", "#E7F4FC"];
 
-var secondaryColour = ["#F9F9F9", "#6A54F3", "#3B41D3", "#F35E54", "#8AFFDC", "#1F2531", "#3835DC", "#303030", "#E3CDFF", "#F9F9F9", "#CFFFF6", "#424546", "#343434"];
+var secondaryColour = ["#F9F9F9", "#6A54F3", "#3B41D3", "#F35E54", "#8AFFDC", "#1F2531", "#3835DC", "#303030", "#E3CDFF", "#F9F9F9", "#CFFFF6", "#424546", "#343434", "#3A3A3A", "#FFE3C9", "#FFEEE2", "#3D6799", "#FAFAFF", "#1F2531", "#136FA3", "#343293", "#E14530", "#1A1A1A", "#3835DC", "#2A6876", "#E15A30", "#035454", "#3E6073", "#C44A23", "#F6F6F6", "#13A39A", "#121212", "#E2FFFF", "#FFFBF2", "#453E3A", "#202A63", "#03071E"];
 
 // "linear-gradient(45deg, #7C4EFF, #3D73FF)"
+
+const primaryColours = primaryColour.length - 1;
+const secondaryColours = secondaryColour.length - 1;
+
+const numberOfColourCombos = primaryColours == secondaryColours ? primaryColours : 20;
 
 var colourSwapSpace = document.querySelector('.heroContent');
 
@@ -22,9 +27,7 @@ var a = Math.round(Math.random() * 6);
 colourSwapSpace.addEventListener("click", function () {
   // var k = i + 2;
 
-  var a = Math.round(Math.random() * 12);
-
-  // alert(a);
+  var a = Math.round(Math.random() * numberOfColourCombos);
 
   document.documentElement.style.setProperty('--primary-colour', primaryColour[a]);
   document.documentElement.style.setProperty('--secondary-colour', secondaryColour[a]);
@@ -287,18 +290,14 @@ var skills = [
 
 function displaySkills (filterTerm) {
 
-  console.log(filterTerm);
-
   const insertionPoint = document.getElementById('skills-display');
   const activeTab = document.getElementById(filterTerm);
   const previousTab = document.getElementsByClassName('active')[0];
 
   insertionPoint.innerHTML = '';
-  console.log('Cleared HTML');
 
   while (insertionPoint.lastElementChild) {
     insertionPoint.removeChild(insertionPoint.lastElementChild);
-    console.log(insertionPoint.lastElementChild);
   }
 
   previousTab.classList.remove('active');
@@ -310,10 +309,6 @@ function displaySkills (filterTerm) {
   // e.target.classList.remove('active');
 
   const skillTitles = getRelevantSkills.map(skillItem => skillItem.skill);
-
-  console.log(skillTitles);
-
-  console.log(insertionPoint);
 
   const skillItems = (skillTitles.map(skill => {
     var IndividualSkillItem = document.createElement('div');
@@ -329,9 +324,5 @@ function displaySkills (filterTerm) {
 };
 
 displaySkills('All');
-
-function alertClick () {
-  console.log("hi");
-}
 
 alertClick();
