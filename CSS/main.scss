@@ -889,6 +889,11 @@ p {
   -webkit-text-fill-color: var(--primary-colour);
   position: relative;
   padding: 1vh 0;
+
+  & > h5 {
+    max-width: 600px;
+    word-wrap: break-word;
+  }
 }
 
 .caseStudy__infoItem::before {

@@ -793,6 +793,10 @@ p {
   position: relative;
   padding: 1vh 0;
 }
+.caseStudy__infoItem > h5 {
+  max-width: 600px;
+  word-wrap: break-word;
+}
 
 .caseStudy__infoItem::before {
   content: "";
